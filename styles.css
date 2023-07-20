@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar--height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 200px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo{
+    margin: 33px 45px;
+}
+
+#logo img{
+    height: 65px;
+    width: 205px;
+    margin: 33px 45px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 125vh;
+    background-image: url(pexels-pixabay-247676.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 0px;
+    padding: 30px;
+}
+
+/*#home::before{
+    content: "";
+    background: url(pexels-pixabay-247676.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}*/
+
+#home h1{
+    color: yellow;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#Art_Container{
+    margin: 34px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#Art_Container .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: #30350950;
+}
+
+#Art_Container .box img{
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    color: aliceblue;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    color: aliceblue;
+}
+
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #fbf12b;
+    margin: 17px;
+    color: #070707;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #fffd6f;
+    box-shadow: 0 0 20px #30350950;
+    transform: scale(1.1);
+  }
+  
+button:active {
+    background-color: #757c07;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+
+.center{
+    text-align: center;
+    font-size: 1.2rem;
+}

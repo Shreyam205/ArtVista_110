@@ -1,0 +1,19 @@
+#navbar{
+    flex-direction: column;
+}
+
+#home{
+    height: 280px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Art_Container{
+    flex-direction: column;
+    text-align: center;
+}
+
+#Art_Container .box{
+    flex-direction: column;
+    text-align: center;
+}
